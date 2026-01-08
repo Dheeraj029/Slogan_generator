@@ -15,7 +15,7 @@ roles, tasks, and constraints can be connected to an OpenAI-compatible API.
   - Product name  
   - Target audience  
   - Tone  
-- Integration with an **OpenAI-compatible API (OpenRouter)**
+- Integration with an **Azure OpenAI**
 - Secure API key management using a `.env` file
 - Multiple slogan styles using different prompt templates
 
@@ -23,7 +23,7 @@ roles, tasks, and constraints can be connected to an OpenAI-compatible API.
 
 - Python 3
 - OpenAI Python SDK
-- OpenRouter API
+- Azure OpenAI
 - dotenv (for environment variable management)
 
 ## 🚀 Setup Instructions
@@ -33,7 +33,9 @@ roles, tasks, and constraints can be connected to an OpenAI-compatible API.
    pip install -r requirements.txt
 2. Create a .env file:
     ```bash
-    OPENROUTER_API_KEY=your_api_key_here
+    AZURE_OPENAI_API_KEY=your_api_key_here
+   AZURE_OPENAI_ENDPOINT=endpoint
+   AZURE_DEPLOYMENT_NAME=model name
 3.  Run the script:
     ```bash
     python main.py
